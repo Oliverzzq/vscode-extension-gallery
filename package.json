@@ -10,5 +10,8 @@
     "@slidev/theme-default": "*",
     "@slidev/theme-seriph": "*"
   },
-  "name": "vscode-extension-gallery"
+  "name": "vscode-extension-gallery",
+  "devDependencies": {
+    "playwright-chromium": "^1.15.2"
+  }
 }

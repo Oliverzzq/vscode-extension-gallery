@@ -9,9 +9,13 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: c-hive/gha-yarn-cache@v2
-      - run: yarn install
-      - run: yarn build
-      - name: Deploy
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile
+      - name: Install operating system dependencies
+        run: npx playwright install-deps
+      - name: Build Slidev
+        run: yarn build
+      - name: Deploy Slidev
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
