@@ -213,7 +213,7 @@ vsce package
   </div>
 </div>
 
-我们可以看到编译后的文件夹 out 和其他一些文件是被直接压缩进安装包的，我们可以看到 .cz-config.js、.prettierrc.js 和 commitlint.config.js 这种开发时文件也被压缩了，运行插件完全用不到，这明显不合理。其实和其他插件体系一样，vscode 也提供了 .vscodeignore 来实现打包忽略配置，我们将以上无关文件忽略重新打包即可。
+我们可以看到编译后的文件夹 out 和其他一些文件是被直接压缩进安装包的，我们可以看到 .cz-config.js、.prettierrc.js 和 commitlint.config.js 这种开发时文件也被压缩了，运行插件完全用不到，这明显不合理。其实和其他插件体系一样，vscode 也提供了 [.vscodeignore](https://github.com/microsoft/vscode-vsce/pull/614/files) 来实现打包忽略配置，我们将以上无关文件忽略重新打包即可。
 
 ---
 layout: image-right
