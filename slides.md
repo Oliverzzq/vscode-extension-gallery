@@ -3,19 +3,19 @@
 theme: seriph
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: https://source.unsplash.com/collection/94734566/1920x1080
+background: https://cdn.jsdelivr.net/gh/youngjuning/images/202110141156190.png
 # apply any windi css classes to the current slide
 class: 'text-center'
 # https://sli.dev/custom/highlighters.html
-highlighter: shiki
+highlighter: Prism
 # show line numbers in code blocks
-lineNumbers: false
+lineNumbers: true
 # some information about the slides, markdown enabled
 info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
+  ## 如何开发一款 VS Code yarn.lock 预览插件
+  精准提效，从零到一实现基于 webview 的 VS Code 插件
 
-  Learn more at [Sli.dev](https://sli.dev)
+  原文请查看 [精准提效|如何开发一款 VS Code yarn.lock 预览插件](https://juejin.cn/post/7010602780087812132)
 # persist drawings in exports and build
 drawings:
   persist: false
@@ -23,29 +23,26 @@ drawings:
 download: 'https://cdn.jsdelivr.net/gh/youngjuning/vscode-extension-gallery@gh-pages/slidev-exported.pdf'
 ---
 
-# Welcome to Slidev
+<link href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-one-light.min.css" rel="stylesheet" />
 
-Presentation slides for developers
+# 如何开发一款 VS Code yarn.lock 预览插件
 
-<div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
-  </span>
+精准提效，从零到一实现基于 webview 的 VS Code 插件
+
+<div class="flex" style="justify-content:center">
+  <img class="mr-10" src="https://cdn.jsdelivr.net/gh/youngjuning/images/202109211725265.png" width="180"/>
+  <img src="https://cdn.jsdelivr.net/gh/youngjuning/images/202110141234963.jpeg" width="180"/>
 </div>
 
 <div class="abs-br m-6 flex gap-2">
   <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
     <carbon:edit />
   </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub"
+  <a href="https://github.com/youngjuning/vscode-extension-gallery/tree/gh-pages" target="_blank" alt="GitHub"
     class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
     <carbon-logo-github />
   </a>
 </div>
-
-<!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
--->
 
 ---
 
