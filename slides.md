@@ -20,7 +20,7 @@ info: |
 drawings:
   persist: false
 # 提供可下载的 PDF
-download: true
+download: 'https://cdn.jsdelivr.net/gh/youngjuning/vscode-extension-gallery@gh-pages/slidev-exported.pdf'
 ---
 
 # Welcome to Slidev
