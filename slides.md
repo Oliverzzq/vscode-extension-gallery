@@ -243,3 +243,5 @@ image: https://cdn.jsdelivr.net/gh/youngjuning/images/202110141644980.png
 ![](https://cdn.jsdelivr.net/gh/youngjuning/images/202110141831690.png)
 
 ![](https://cdn.jsdelivr.net/gh/youngjuning/images/202110141831137.png)
+
+> 具体案例：[精准提效|如何开发一款 VS Code yarn.lock 预览插件](https://wiki.tuya-inc.com:7799/page/1448189203589378125)
