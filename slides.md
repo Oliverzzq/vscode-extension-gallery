@@ -168,20 +168,7 @@ image: https://cdn.jsdelivr.net/gh/youngjuning/images/202110141613724.png
 }
 ```
 
-然后 package.json 中写：
-
-```
-{
-  "contributes": {
-    "commands": [
-      {
-        "command": "tuyaya.helloWorld",
-        "title": "Hello World"
-      }
-    ]
-  },
-}
-```
+然后 package.json 中按照 `%contributes.commands.tuyaya.helloWorld.title%` 的方式使用。
 
 ---
 
@@ -242,3 +229,17 @@ image: https://cdn.jsdelivr.net/gh/youngjuning/images/202110141644980.png
 但是我们的安装包中并没有 node_modules，那么 vscode 这个包存在在哪里呢？阅读[源码](https://is.gd/33GTcH) 后，我们可以发现 vscode 通过底层 Node.js API 将 vscode 库挂载到 Node.js 中了。
 
 > 注意：默认打包会将 node_modules 全量打包进安装包，我们可以使用 esbuild 优化，感兴趣的同学可以参考 [使用 esbuild 优化打包](https://juejin.cn/post/7000589186898231333#heading-8)。
+
+---
+
+# 插件推荐
+
+![](https://cdn.jsdelivr.net/gh/youngjuning/images/202110141828077.png)
+
+![](https://cdn.jsdelivr.net/gh/youngjuning/images/202110141829359.png)
+
+![](https://cdn.jsdelivr.net/gh/youngjuning/images/202110141830825.png)
+
+![](https://cdn.jsdelivr.net/gh/youngjuning/images/202110141831690.png)
+
+![](https://cdn.jsdelivr.net/gh/youngjuning/images/202110141831137.png)
